@@ -15,6 +15,14 @@
 
 - 💬 Ask me about **Git, React, Next, AI tools, Getting the Software Engineering Job**
 
+
+<h3 align="left"> Blogs I have written:</h3>
+
+- [Hello World:Curing Imposter Syndrome](https://stackoverflow.blog/2020/02/10/hello-world-curing-imposter-syndrome-by-embracing-the-suck/) 
+- [Hello World: Learn How To Learn](https://stackoverflow.blog/2020/01/11/hello-world-want-to-be-a-developer-learn-how-to-learn/)
+- [Github Guide: Teaching In Public With Github](https://github.com/readme/guides/teaching-with-github)
+- [Github Guide: Junior To Senior](https://github.com/readme/guides/engineering-career-success)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
