@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **Azure AI Services, AWS Amplify, Python**
 
-- 🎥 I’m recording next **Front End Masters Project**
+- 🎥 I’m recording next **nothing**
 
 - 🤝 I’m looking for help with [Vets Who Code](https://github.com/Vets-Who-Code)
 
