@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jeromehardaway" alt="jeromehardaway" /></a> </p>
 
-- 🎥 I’m currently recording **Linkedin Learning Project**
+- 🎥 I’m currently recording **Front End Masters**
 
 - 🌱 I’m currently learning **Azure AI Services, AWS Amplify, Python**
 
