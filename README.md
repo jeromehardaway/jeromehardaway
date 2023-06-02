@@ -5,17 +5,16 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jeromehardaway" alt="jeromehardaway" /></a> </p>
 
-- 🎥 I’m currently recording **Front End Masters**
+- 🎥 I’m currently building: **Vets Who Code New Web App**
 
-- 🌱 I’m currently learning **Azure AI Services, AWS Amplify, Python**
+- 🌱 I’m currently learning: **Azure AI Services, AWS Amplify, Python**
 
-- 🎥 I’m recording next **nothing**
+- 🎥 I’m building next: **Connecting web app to LMS **
 
 - 🤝 I’m looking for help with [Vets Who Code](https://github.com/Vets-Who-Code)
 
 - 💬 Ask me about **Git, React, Next, AI tools, Getting the Software Engineering Job**
 
-<h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
 
