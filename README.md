@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning: **Azure AI Services, AWS Amplify, Python**
 
-- 🎥 I’m building next: **Connecting web app to LMS **
+- 🎥 I’m building next: **Connecting web app to LMS**
 
 - 🤝 I’m looking for help with [Vets Who Code](https://github.com/Vets-Who-Code)
 
