@@ -5,15 +5,15 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jeromehardaway" alt="jeromehardaway" /></a> </p>
 
-- 🎥 I’m currently building: **Vets Who Code New Web App**
+- 🎥 I’m currently building: **Vets Who Code Web App**
 
-- 🌱 I’m currently learning: **Azure AI Services, AWS Amplify, Python**
+- 🌱 I’m currently learning: **Azure AI Services and Python**
 
-- 🎥 I’m building next: **Connecting web app to LMS**
+- 🎥 I’m building next: **No Idea LOL**
 
-- 🤝 I’m looking for help with [Vets Who Code](https://github.com/Vets-Who-Code)
+- 🤝 I’m looking for help with mentoring more veterans.
 
-- 💬 Ask me about **Git, React, Next, AI tools, Getting the Software Engineering Job**
+- 💬 Ask me about **Git, Next, AI tools, Getting the Software Engineering Job**
 
 <p align="left">
 </p>
