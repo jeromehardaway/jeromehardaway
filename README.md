@@ -6,14 +6,14 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jeromehardaway" alt="jeromehardaway" /></a> </p>
 
 <p>
-  I'm Jerome Hardaway, a software engineer, blogger, instructor, CTO, and mentor based in Atlanta. My passion lies in leveraging technology to solve complex problems, mentoring the next generation of developers, and continuously advancing my expertise in AI and coding. My ultimate goal is to become a leading expert in AI and coding, and to achieve significant financial success in my career.
+  I'm Jerome Hardaway, a software engineer, blogger, instructor, CTO, and mentor based in Atlanta. My passion lies in leveraging technology to solve complex problems, mentoring the next generation of developers, and continuously advancing my expertise in AI and coding. My ultimate goal is to become a leading expert in AI and coding, and to help people be successful.
 </p>
 
-- 🎥 I’m currently building: **Vets Who Code Web App**
+- 🎥 I’m currently building: **My Ruck, Vets Who Code Web App, Azure AI Services**
 
-- 🌱 I’m currently learning: **Azure AI Services and Python**
+- 🌱 I’m currently learning: **AI Safety, Content Moderation, Deep Learning **
 
-- 🎥 I’m building next: **No Idea LOL**
+- 🎥 I’m building next: **A few courses for Linkedin Learning and Front End Masters.**
 
 - 🤝 I’m looking for help with mentoring more veterans.
 
