@@ -13,7 +13,7 @@
 
 - 🌱 I’m currently learning: **AI Safety, Content Moderation, Deep Learning **
 
-- 🎥 I’m building next: **A few courses for Linkedin Learning and Front End Masters.**
+- 🎥 I’m building next: **A few courses for Linkedin Learning and Front End Masters, but building a small profile site. Follow the tickets [here](https://github.com/users/jeromehardaway/projects/10).**
 
 - 🤝 I’m looking for help with mentoring more veterans.
 
