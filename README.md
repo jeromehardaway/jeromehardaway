@@ -31,4 +31,4 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=jeromehardaway&" alt="jeromehardaway" /></p>
 
-<a href="https://app.daily.dev/jhardaway"><img src="https://api.daily.dev/devcards/7942d829e7814937b4c3c05e772c5989.png?r=0a9" width="400" alt="Jerome Hardaway's Dev Card"/></a>
+<a href="https://app.daily.dev/jhardaway"><img src="https://api.daily.dev/devcards/v2/r5DcPbCuU.png?r=kbz" width="356" alt="Jerome Hardaway's Dev Card"/></a>
