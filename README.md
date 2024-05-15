@@ -16,6 +16,8 @@ With a background in military service and significant leadership in tech educati
 - **[VetsWhoCode Extension Pack](https://github.com/Vets-Who-Code/vetswhocode-extension-pack):** Compiling essential VS Code extensions to enhance coding efficiency for our students.
 - **[VetsWhoCode VS Code Theme](https://github.com/Vets-Who-Code/vetswhocode-vs-code-theme):** Designing a custom Visual Studio Code theme tailored for our community.
 
+You can view these and more [here](https://jeromehardaway.github.io/#).
+
 ## Leadership & Advocacy 🌟
 - **Vets Who Code:** As the Executive Director, I have transformed traditional educational models by integrating advanced technology and data analytics to better serve veteran students.
 - **Community Engagement:** Built a robust community of tech professionals and veterans, facilitating mentorship, networking, and career opportunities. 🤝
