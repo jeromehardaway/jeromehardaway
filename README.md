@@ -6,7 +6,7 @@ With a background in military service and significant leadership in tech educati
 ## Technical Skills 🛠️
 - **Languages:** JavaScript, Python, TypeScript
 - **Frameworks & Libraries:** React, Next.js, Node.js, FastAPI
-- **Tools & Platforms:** GitHub, Docker, Azure, Vercel
+- **Tools & Platforms:** GitHub, Docker, Azure, Vercel, Cloudinary. OpenAI
 - **Data Science & AI:** Proficient in machine learning concepts and data analysis, applying these to optimize educational outcomes.
 
 ## Key Projects 📚
