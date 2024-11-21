@@ -53,7 +53,7 @@ A Guide to help veterans
 
 ### Industry Engagement
 - Regular speaker at tech conferences
-- Advocate for veterans' transition into tech
+- Advocate for veterans' transition into software engineering
 - Shares insights on innovations in tech education
 
 ## 🎯 Professional Goals
