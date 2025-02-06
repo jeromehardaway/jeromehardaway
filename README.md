@@ -12,8 +12,8 @@ Transforming veterans' lives through code. Leading Vets Who Code to empower mili
 ## 🛠️ Technical Stack
 ```javascript
 const skills = {
-    languages: ['JavaScript', 'Python', 'TypeScript', 'Kotlin'],
-    frameworks: ['React', 'Next.js', 'Node.js', 'FastAPI', 'Ktor'],
+    languages: ['JavaScript', 'Python', 'TypeScript'],
+    frameworks: ['React', 'Next.js', 'Node.js', 'FastAPI'],
     platforms: ['GitHub', 'Docker', 'Azure', 'Vercel', 'Cloudinary'],
     ai: ['OpenAI', 'Machine Learning', 'Data Analysis']
 };
