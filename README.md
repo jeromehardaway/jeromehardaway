@@ -1,70 +1,126 @@
-# Jerome Hardaway
+---
+layout: default
+---
 
-> Veteran 🎖️ | Executive Director @ Vets Who Code | Software Engineer | Tech Education Innovator
+<h1 align="center">Hi, I'm Jerome Hardaway 👋🏾</h1>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/jeromehardaway)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:jerome@vetswhocode.io)
-[![Organization](https://img.shields.io/badge/VetsWhoCode-Website-green)](https://vets-who-code.github.io/)
+<p align="center">
+  <b>Veteran • Engineer • AI Builder • UI Architect • Data Wrangler</b><br>
+  I build tools, systems, and people.
+</p>
 
-## 🎯 Mission
-Transforming veterans' lives through code. Leading Vets Who Code to empower military veterans with modern software engineering skills and creating pathways to tech careers.
-
-## 🛠️ Technical Stack
-```javascript
-const skills = {
-    languages: ['JavaScript', 'Python', 'TypeScript'],
-    frameworks: ['React', 'Next.js', 'Node.js', 'FastAPI'],
-    platforms: ['GitHub', 'Docker', 'Azure', 'Vercel', 'Cloudinary'],
-    ai: ['OpenAI', 'Machine Learning', 'Data Analysis']
-};
-```
-
-## 🚀 Key Projects
-
-### VetsAI
-Open-source AI platform designed specifically for veterans
-- **GitHub**: [View Project](https://github.com/Vets-Who-Code/VetsAI)
-
-### Vets Who Code Platform
-WebSite for veteran learning experiences
-- **GitHub**: [View Project](https://github.com/Vets-Who-Code/vets-who-code-app)
-- **Website**: [View Live](https://vets-who-code.github.io/)
-
-### Web Development Curriculum
-Comprehensive curriculum bridging the gap from novice to job-ready developer
-- **GitHub**: [View Curriculum](https://github.com/Vets-Who-Code/web-curriculum)
-
-### SOPs
-A Guide to help veterans
-- **SOPs**: [vets-who-code.github.io](https://vets-who-code.github.io/)
-
-### Developer Tools
-- [Prework](https://github.com/Vets-Who-Code/Prework): Initial coding exercises for web development preparation
-- [VS Code Extension Pack](https://github.com/Vets-Who-Code/vetswhocode-extension-pack): Essential extensions for coding efficiency
-- [VS Code Theme](https://github.com/Vets-Who-Code/vetswhocode-vs-code-theme): Custom theme for our community
-
-## 🎖️ Leadership & Community Impact
-
-### Executive Leadership at Vets Who Code
-- Transformed traditional educational models through technology integration
-- Implemented data analytics to enhance veteran student success
-- Built a robust community of tech professionals and veterans
-- Facilitated mentorship and networking opportunities
-
-### Industry Engagement
-- Regular speaker at tech conferences
-- Advocate for veterans' transition into software engineering
-- Shares insights on innovations in tech education
-
-## 🎯 Professional Goals
-- Advancing in software development roles that leverage leadership experience
-- Building impactful tech solutions
-- Continuous learning and skill development in latest technologies
-
-## 📬 Connect With Me
-- **LinkedIn**: [in/jeromehardaway](https://linkedin.com/in/jeromehardaway)
-- **Email**: jerome@vetswhocode.io
-- **Portfolio**: [jeromehardaway.github.io](https://jeromehardaway.github.io)
+<p align="center">
+  <a href="https://jerome.codes" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jerome.codes-informational?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/jeromehardaway" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://twitter.com/VetsWhoCode" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+  <a href="https://www.youtube.com/@vetswhocode" target="_blank"><img src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+</p>
 
 ---
-*Building bridges from military service to tech careers through code* 🚀
+
+### 🧠 What I Do
+
+- 🧬 **AI Engineering** — Gemini 2.5 Pro • GPT-4o • PHI-3 • Transformers.js • DeepSpeed
+- 🔁 **Data Engineering** — Terraform • Firebase • SQL • GitHub Actions • Analytics-driven LLM training
+- 🎨 **UI Engineering** — React • Tailwind CSS • Accessible design systems • Component architecture
+
+---
+
+### 🔥 Tech Stack
+
+```ts
+Languages:   Python, JavaScript, TypeScript, SQL
+Frontend:    React, Next.js, Tailwind CSS, Framer Motion
+Backend:     FastAPI, Flask, Node.js
+AI/ML:       Gemini 2.5 Pro, GPT-4o, PHI-3, DeepSpeed, T5, Transformers.js
+Infra:       Google Cloud, Firebase, Terraform, GitHub Actions
+Testing:     Cypress, Playwright, Postman
+Design:      Storybook, Figma, Accessible UI Patterns
+```
+
+---
+
+### 🚀 Projects
+
+- ✏️ **Military-to-Civilian Translator** – NLP tool using T5 + Transformers.js
+- 📊 **Vets Who Code Intelligence** – LLM + data pipeline for alumni success signals
+- 🎨 **Mission UI** – Accessible, animated React design system
+- 🧠 **Custom AI Model** – Training with DeepSpeed for curriculum intelligence
+- 🧰 **jerome.codes** – Portfolio, blogs, labs, design, and code all in one place
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=JeromeHardaway&show_icons=true&theme=radical" alt="Jerome's GitHub stats" />
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=JeromeHardaway&theme=radical" alt="GitHub Streak" />
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JeromeHardaway&layout=compact&theme=radical" alt="Top Langs" />
+</p>
+
+---
+
+### 🏆 Recognition
+
+<p align="left">
+  <img src="https://img.shields.io/badge/White%20House%20Demo%20Day-Honoree-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Google-Builder%20Invite-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Microsoft-Global%20Hackathon%20Winner-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/GitHub-Star-black?style=flat-square&logo=github" />
+  <img src="https://img.shields.io/badge/ForbesBLK-Member-black?style=flat-square" />
+</p>
+
+---
+
+### 📚 Publications
+
+- 📘 [Junior to Senior – GitHub ReadME](https://github.com/readme/guides/engineering-career-success)
+- 🧠 [Teaching in Public – GitHub ReadME](https://github.com/readme/guides/teaching-with-github)
+- 🧭 [Learn How to Learn – Stack Overflow](https://stackoverflow.blog/2020/01/11/hello-world-want-to-be-a-developer-learn-how-to-learn/)
+- ⚡ *Embrace the Suck – Stack Overflow Blog*
+
+---
+
+### ✨ Featured In
+
+> 📌 Wired • Business Insider • HuffPost • Black Enterprise • GitHub ReadME • Stack Overflow • Roadtrip Nation
+>
+> 🏛️ White House Demo Day — Honored by President Obama  
+> 🧠 Google — Invited as a builder for Gemini-powered veteran tech
+
+---
+
+### 💬 Let’s Connect
+
+- 🌐 Website → [jerome.codes](https://jerome.codes)
+- 💼 LinkedIn → [linkedin.com/in/jeromehardaway](https://linkedin.com/in/jeromehardaway)
+- 🧠 Vets Who Code → [vetswhocode.io](https://vetswhocode.io)
+- 📺 YouTube → [@vetswhocode](https://www.youtube.com/@vetswhocode)
+
+---
+
+<p align="center"><em>“Software is a tool of freedom. I teach people to wield it.”</em></p>
+
+---
+
+<script>
+  // Simple scroll animation loader (for web version)
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('h1, h2, h3, p, img').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transition = 'opacity 1s ease-in-out';
+    });
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('h1, h2, h3, p, img').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.style.opacity = 1;
+        }
+      });
+    });
+  });
+</script>
