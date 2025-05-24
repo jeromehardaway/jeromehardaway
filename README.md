@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <h1 align="center">Hi, I'm Jerome Hardaway 👋🏾</h1>
 
 <p align="center">
