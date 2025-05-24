@@ -103,24 +103,5 @@ Design:      Storybook, Figma, Accessible UI Patterns
 
 ---
 
-<p align="center"><em>“Software is a tool of freedom. I teach people to wield it.”</em></p>
+<p align="center"><em>“Focus Fuels Freedom.”</em></p>
 
----
-
-<script>
-  // Simple scroll animation loader (for web version)
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('h1, h2, h3, p, img').forEach(el => {
-      el.style.opacity = 0;
-      el.style.transition = 'opacity 1s ease-in-out';
-    });
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('h1, h2, h3, p, img').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          el.style.opacity = 1;
-        }
-      });
-    });
-  });
-</script>
