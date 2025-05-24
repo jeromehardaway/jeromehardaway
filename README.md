@@ -77,13 +77,21 @@ Design:      Storybook, Figma, Accessible UI Patterns
 - 📘 [Junior to Senior – GitHub ReadME](https://github.com/readme/guides/engineering-career-success)
 - 🧠 [Teaching in Public – GitHub ReadME](https://github.com/readme/guides/teaching-with-github)
 - 🧭 [Learn How to Learn – Stack Overflow](https://stackoverflow.blog/2020/01/11/hello-world-want-to-be-a-developer-learn-how-to-learn/)
-- ⚡ *Embrace the Suck – Stack Overflow Blog*
+- ⚡ [Embrace the Suck – Stack Overflow Blog](https://stackoverflow.blog/2020/02/10/hello-world-curing-imposter-syndrome-by-embracing-the-suck/)
 
 ---
 
 ### ✨ Featured In
 
-> 📌 Wired • Business Insider • HuffPost • Black Enterprise • GitHub ReadME • Stack Overflow • Roadtrip Nation
+> 📌 **Wired** • **Business Insider** • **HuffPost** • **Black Enterprise** • **GitHub ReadME** • **Stack Overflow** • **Roadtrip Nation**
+
+- **Wired**: [How One Veteran Is Using Code to Make a Difference](https://apple.news/A2tWUoNIcRSaZydAOXTzOPg)  
+- **Business Insider**: [An Air Force veteran who taught himself to code explains how he started a nonprofit that has educated other vets on how to get jobs in tech](https://africa.businessinsider.com/careers/an-air-force-veteran-who-taught-himself-to-code-explains-how-he-started-a-nonprofit/3gvee25)  
+- **HuffPost**: *[Link needed — please provide the URL to include it here]*  
+- **Black Enterprise**: [BE Modern Man: Meet 'The Tech Veteran' Jerome Hardaway](https://www.blackenterprise.com/tech-veteran-jerome-hardaway/)  
+- **GitHub ReadME Project**: [Jerome Hardaway · GitHub ReadME](https://github.com/readme/stories/jerome-hardaway)  
+- **Stack Overflow**: [Ben Popper is the Worst Coder in The World of Seven Billion Humans](https://stackoverflow.blog/author/jhardaway/)  
+- **Roadtrip Nation**: [Jerome Hardaway - Roadtrip Nation Interview](https://roadtripnation.com/interviews/jerome-hardaway)
 >
 > 🏛️ White House Demo Day — Honored by President Obama  
 > 🧠 Google — Invited as a builder for Gemini-powered veteran tech
