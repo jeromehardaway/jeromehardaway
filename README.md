@@ -87,7 +87,7 @@ Design:      Storybook, Figma, Accessible UI Patterns
 
 - **Wired**: [How One Veteran Is Using Code to Make a Difference](https://apple.news/A2tWUoNIcRSaZydAOXTzOPg)  
 - **Business Insider**: [An Air Force veteran who taught himself to code explains how he started a nonprofit that has educated other vets on how to get jobs in tech](https://africa.businessinsider.com/careers/an-air-force-veteran-who-taught-himself-to-code-explains-how-he-started-a-nonprofit/3gvee25)  
-- **HuffPost**: *[Link needed — please provide the URL to include it here]*  
+- **HuffPost**: *[Vets Who Code: Training Troops for Careers in Tech](https://www.huffpost.com/entry/vets-who-code-training-tr_b_10017524)*  
 - **Black Enterprise**: [BE Modern Man: Meet 'The Tech Veteran' Jerome Hardaway](https://www.blackenterprise.com/tech-veteran-jerome-hardaway/)  
 - **GitHub ReadME Project**: [Jerome Hardaway · GitHub ReadME](https://github.com/readme/stories/jerome-hardaway)  
 - **Stack Overflow**: [Ben Popper is the Worst Coder in The World of Seven Billion Humans](https://stackoverflow.blog/author/jhardaway/)  
