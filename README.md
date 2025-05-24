@@ -41,7 +41,7 @@ Design:      Storybook, Figma, Accessible UI Patterns
 - ✏️ **Military-to-Civilian Translator** – NLP tool using T5 + Transformers.js
 - 📊 **Vets Who Code Intelligence** – LLM + data pipeline for alumni success signals
 - 🎨 **Mission UI** – Accessible, animated React design system
-- 🧠 **Custom AI Model** – Training with DeepSpeed for curriculum intelligence
+- 🧠 **Knowledge Base** – Training with DeepSpeed for curriculum intelligence
 - 🧰 **jerome.codes** – Portfolio, blogs, labs, design, and code all in one place
 
 ---
