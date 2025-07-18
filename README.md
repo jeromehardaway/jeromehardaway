@@ -6,7 +6,6 @@
 </p>
 
 <p align="center">
-  <a href="https://jerome.codes" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jerome.codes-informational?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/jeromehardaway" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://twitter.com/VetsWhoCode" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white"/></a>
   <a href="https://www.youtube.com/@vetswhocode" target="_blank"><img src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white"/></a>
