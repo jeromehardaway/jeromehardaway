@@ -24,13 +24,13 @@
 ### 🔥 Tech Stack
 
 ```ts
-Languages:   Python, JavaScript, TypeScript, SQL
+Languages:   Python, JavaScript/TypeScript, SQL
 Frontend:    React, Next.js, Tailwind CSS, Framer Motion
-Backend:     FastAPI, Flask, Node.js
+Backend:     FastAPI, Streamlit, Node.js
 AI/ML:       Gemini 2.5 Pro, GPT-4o, PHI-3, DeepSpeed, T5, Transformers.js
 Infra:       Google Cloud, Firebase, Terraform, GitHub Actions
 Testing:     Cypress, Playwright, Postman
-Design:      Storybook, Figma, Accessible UI Patterns
+Design:      Storybook, Figma
 ```
 
 ---
