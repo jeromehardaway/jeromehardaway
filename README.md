@@ -26,10 +26,10 @@
 Languages:   Python, JavaScript/TypeScript, SQL
 Frontend:    React, Next.js, Tailwind CSS, Framer Motion
 Backend:     FastAPI, Streamlit, Node.js
-AI/ML:       Gemini 2.5 Pro, GPT-4o, PHI-3, DeepSpeed, T5, Transformers.js
+AI/ML:       Gemini Models, GPT-4o, PHI-3, DeepSpeed, T5, Transformers.js
 Infra:       Google Cloud, Firebase, Terraform, GitHub Actions
 Testing:     Cypress, Playwright, Postman
-Design:      Storybook, Figma
+Design:      Storybook
 ```
 
 ---
@@ -43,6 +43,9 @@ Design:      Storybook, Figma
 - 🧰 **jerome.codes** – Portfolio, blogs, labs, design, and code all in one place
 
 ---
+
+### Work
+Here is the project board of my open source work todos: [Project Board](https://github.com/orgs/Vets-Who-Code/projects/82)
 
 ### 📊 GitHub Stats
 
