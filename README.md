@@ -88,8 +88,5 @@ Data:          PostgreSQL, Redis, BigQuery, Delta Lake
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JeromeHardaway&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-</p>
 
 <p align="center"><b>Impact Over Interference.</b></p>
