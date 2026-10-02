@@ -4679,12 +4679,12 @@
    "url": "https://github.com/Vets-Who-Code/vets-who-code-app"
   },
   {
-   "description": "The Complete Windows Web Developer Setup Guide",
-   "forks": 34,
+   "description": "A VS Code theme in Vets Who Code colors.",
+   "forks": 0,
    "languages": [],
-   "name": "windows-dev-guide",
-   "stars": 414,
-   "url": "https://github.com/Vets-Who-Code/windows-dev-guide"
+   "name": "vetswhocode-vs-code-theme",
+   "stars": 4,
+   "url": "https://github.com/Vets-Who-Code/vetswhocode-vs-code-theme"
   },
   {
    "description": "List of fun apis that are free for troops to play with while learning javascript",

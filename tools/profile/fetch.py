@@ -20,7 +20,7 @@ TOKEN = os.environ.get("PROFILE_TOKEN") or os.environ.get("GITHUB_TOKEN")
 # Keep the count even: cards render two per row.
 OPS = {
     "vets-who-code-app": "The TypeScript/Next.js platform behind vetswhocode.io and the accelerator.",
-    "windows-dev-guide": "The complete Windows web developer setup guide.",
+    "vetswhocode-vs-code-theme": "A VS Code theme in Vets Who Code colors.",
     "api-list": "Free, fun APIs for troops to build with while learning JavaScript.",
     "Prework": "The on-ramp every prospective VWC troop completes.",
     "hashflag-skills": "The skill map behind the Hashflag Method curriculum.",
