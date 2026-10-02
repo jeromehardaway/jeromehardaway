@@ -4665,6 +4665,60 @@
  "followers": 750,
  "login": "jeromehardaway",
  "name": "Jerome Hardaway",
+ "ops": [
+  {
+   "description": "The TypeScript/Next.js platform behind vetswhocode.io and the accelerator.",
+   "forks": 81,
+   "languages": [
+    "TypeScript",
+    "CSS",
+    "JavaScript"
+   ],
+   "name": "vets-who-code-app",
+   "stars": 56,
+   "url": "https://github.com/Vets-Who-Code/vets-who-code-app"
+  },
+  {
+   "description": "The Complete Windows Web Developer Setup Guide",
+   "forks": 34,
+   "languages": [],
+   "name": "windows-dev-guide",
+   "stars": 414,
+   "url": "https://github.com/Vets-Who-Code/windows-dev-guide"
+  },
+  {
+   "description": "List of fun apis that are free for troops to play with while learning javascript",
+   "forks": 46,
+   "languages": [],
+   "name": "api-list",
+   "stars": 206,
+   "url": "https://github.com/Vets-Who-Code/api-list"
+  },
+  {
+   "description": "Prework for Prospective VWC Troops",
+   "forks": 48,
+   "languages": [],
+   "name": "Prework",
+   "stars": 150,
+   "url": "https://github.com/Vets-Who-Code/Prework"
+  },
+  {
+   "description": "a repository of skills and agents made at Vets Who COde that helps our nonprofit build and and operate straight from the terminal..",
+   "forks": 1,
+   "languages": [],
+   "name": "hashflag-skills",
+   "stars": 0,
+   "url": "https://github.com/Vets-Who-Code/hashflag-skills"
+  },
+  {
+   "description": "Extension Pack For New veterans learning Javascript at Vets Who Code",
+   "forks": 1,
+   "languages": [],
+   "name": "vetswhocode-extension-pack",
+   "stars": 10,
+   "url": "https://github.com/Vets-Who-Code/vetswhocode-extension-pack"
+  }
+ ],
  "prs_merged": 492,
  "prs_total": 560,
  "repos": [

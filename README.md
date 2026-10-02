@@ -5,9 +5,9 @@
 <img src="./assets/record.svg" alt="Service record: 750 followers, 206 stars, 492 PRs merged, 5,150 contributions" align="top">
 <img src="./assets/city.svg" alt="Mission Log: contribution city for the last 53 weeks" align="top">
 <img src="./assets/operations.svg" alt="Operations" align="top">
-<a href="https://github.com/jeromehardaway/how-to-get-the-front-end-job-v2"><img src="./assets/op-1.svg" alt="OP: how-to-get-the-front-end-job-v2" align="top"></a><a href="https://github.com/jeromehardaway/how-to-get-front-end-job"><img src="./assets/op-2.svg" alt="OP: how-to-get-front-end-job" align="top"></a>
-<a href="https://github.com/jeromehardaway/react-user-search"><img src="./assets/op-3.svg" alt="OP: react-user-search" align="top"></a><a href="https://github.com/jeromehardaway/prompt-engineering-practice-chat-app"><img src="./assets/op-4.svg" alt="OP: prompt-engineering-practice-chat-app" align="top"></a>
-<a href="https://github.com/jeromehardaway/practice"><img src="./assets/op-5.svg" alt="OP: practice" align="top"></a><a href="https://github.com/jeromehardaway/eriks-travel-agency"><img src="./assets/op-6.svg" alt="OP: eriks-travel-agency" align="top"></a>
+<a href="https://github.com/Vets-Who-Code/vets-who-code-app"><img src="./assets/op-1.svg" alt="OP: vets-who-code-app" align="top"></a><a href="https://github.com/Vets-Who-Code/windows-dev-guide"><img src="./assets/op-2.svg" alt="OP: windows-dev-guide" align="top"></a>
+<a href="https://github.com/Vets-Who-Code/api-list"><img src="./assets/op-3.svg" alt="OP: api-list" align="top"></a><a href="https://github.com/Vets-Who-Code/Prework"><img src="./assets/op-4.svg" alt="OP: Prework" align="top"></a>
+<a href="https://github.com/Vets-Who-Code/hashflag-skills"><img src="./assets/op-5.svg" alt="OP: hashflag-skills" align="top"></a><a href="https://github.com/Vets-Who-Code/vetswhocode-extension-pack"><img src="./assets/op-6.svg" alt="OP: vetswhocode-extension-pack" align="top"></a>
 <img src="./assets/footer.svg" alt="End of brief" align="top">
 </div>
 <!-- brief:end -->

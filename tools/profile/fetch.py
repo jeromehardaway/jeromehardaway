@@ -16,6 +16,17 @@ STATS = Path(__file__).parent / "data" / "stats.json"
 TOKEN = os.environ.get("PROFILE_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
 # ponytail: first 100 repos by stars; repos past #100 add ~0 stars. Paginate if that changes.
+# Operations cards, in display order -> fallback brief when the repo has no description.
+# Keep the count even: cards render two per row.
+OPS = {
+    "vets-who-code-app": "The TypeScript/Next.js platform behind vetswhocode.io and the accelerator.",
+    "windows-dev-guide": "The complete Windows web developer setup guide.",
+    "api-list": "Free, fun APIs for troops to build with while learning JavaScript.",
+    "Prework": "The on-ramp every prospective VWC troop completes.",
+    "hashflag-skills": "The skill map behind the Hashflag Method curriculum.",
+    "vetswhocode-extension-pack": "The VWC developer environment, out of the box.",
+}
+
 PROFILE_QUERY = """
 query($login: String!) {
   user(login: $login) {
@@ -45,22 +56,23 @@ def graphql(query, variables=None):
         body = json.load(resp)
     if body.get("errors"):
         raise RuntimeError(body["errors"])
-    return body["data"]["user"]
+    return body["data"]
+
+
+def repo(r):
+    return {
+        "name": r["name"],
+        "description": r["description"] or "",
+        "url": r["url"],
+        "stars": r["stargazerCount"],
+        "forks": r["forkCount"],
+        "languages": [lang["name"] for lang in r["languages"]["nodes"]],
+    }
 
 
 def fetch_profile():
-    u = graphql(PROFILE_QUERY, {"login": LOGIN})
-    repos = [
-        {
-            "name": r["name"],
-            "description": r["description"] or "",
-            "url": r["url"],
-            "stars": r["stargazerCount"],
-            "forks": r["forkCount"],
-            "languages": [lang["name"] for lang in r["languages"]["nodes"]],
-        }
-        for r in u["repositories"]["nodes"]
-    ]
+    u = graphql(PROFILE_QUERY, {"login": LOGIN})["user"]
+    repos = [repo(r) for r in u["repositories"]["nodes"]]
     return {
         "login": u["login"],
         "name": u["name"],
@@ -74,13 +86,23 @@ def fetch_profile():
     }
 
 
+def fetch_ops():
+    fields = "name description url stargazerCount forkCount languages(first: 3, orderBy: {field: SIZE, direction: DESC}) { nodes { name } }"
+    aliases = "\n".join(f'r{i}: repository(owner: "Vets-Who-Code", name: "{n}") {{ {fields} }}' for i, n in enumerate(OPS))
+    data = graphql(f"query {{ {aliases} }}")
+    ops = [repo(data[f"r{i}"]) for i in range(len(OPS))]
+    for r, brief in zip(ops, OPS.values()):
+        r["description"] = r["description"] or brief
+    return ops
+
+
 def fetch_calendar(years):
     aliases = "\n".join(
         f'y{y}: contributionsCollection(from: "{y}-01-01T00:00:00Z", to: "{y}-12-31T23:59:59Z") '
         "{ contributionCalendar { weeks { contributionDays { date contributionCount } } } }"
         for y in years
     )
-    u = graphql(f"query($login: String!) {{ user(login: $login) {{ {aliases} }} }}", {"login": LOGIN})
+    u = graphql(f"query($login: String!) {{ user(login: $login) {{ {aliases} }} }}", {"login": LOGIN})["user"]
     today = date.today().isoformat()
     return {
         d["date"]: d["contributionCount"]
@@ -117,6 +139,12 @@ def main():
         ok += 1
     except Exception as e:
         print(f"profile fetch failed, keeping previous: {e}", file=sys.stderr)
+
+    try:
+        stats["ops"] = fetch_ops()
+        ok += 1
+    except Exception as e:
+        print(f"ops fetch failed, keeping previous: {e}", file=sys.stderr)
 
     if stats.get("years"):
         try:

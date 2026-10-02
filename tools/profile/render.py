@@ -34,7 +34,6 @@ LINKS = [  # (file, label, url)
     ("link-youtube", "YOUTUBE", "https://www.youtube.com/@vetswhocode"),
     ("link-portfolio", "PORTFOLIO", "https://jerome.codes"),
 ]
-N_OPS = 6  # even, so every card row is two half-width cards
 
 
 @cache
@@ -359,8 +358,8 @@ def city(stats):
 
 
 def ops(stats):
-    """Repos shown as Operations cards: top owned repos by stars, minus this profile repo."""
-    return [r for r in stats["repos"] if r["name"] != stats["login"]][:N_OPS]
+    """Repos shown as Operations cards (picked in fetch.OPS)."""
+    return stats["ops"]
 
 
 def operations_caption():
