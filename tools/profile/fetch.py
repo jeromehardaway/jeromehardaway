@@ -16,7 +16,7 @@ STATS = Path(__file__).parent / "data" / "stats.json"
 TOKEN = os.environ.get("PROFILE_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
 # ponytail: first 100 repos by stars; repos past #100 add ~0 stars. Paginate if that changes.
-# Operations cards, in display order -> fallback brief when the repo has no description.
+# Operations cards, in display order -> the brief shown on the card.
 # Keep the count even: cards render two per row.
 OPS = {
     "vets-who-code-app": "The TypeScript/Next.js platform behind vetswhocode.io and the accelerator.",
@@ -92,7 +92,7 @@ def fetch_ops():
     data = graphql(f"query {{ {aliases} }}")
     ops = [repo(data[f"r{i}"]) for i in range(len(OPS))]
     for r, brief in zip(ops, OPS.values()):
-        r["description"] = r["description"] or brief
+        r["description"] = brief
     return ops
 
 

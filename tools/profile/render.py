@@ -105,6 +105,8 @@ def slice_svg(h, body, css="", w=W, left=True, right=True, top=False, bottom=Fal
     used = {}
     for name, s in TEXT_RE.findall(body):
         used[name] = used.get(name, "") + s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+    for name, t in used.items():
+        assert has_glyphs(name, t) == t, f"{name} font lacks glyphs in {t!r}"
     faces = "".join(font_face(n, t) for n, t in sorted(used.items()))
     y0, y1 = (RAIL if top else 0), (h - RAIL if bottom else h)
     x0, x1 = RAIL, w - RAIL
@@ -204,13 +206,14 @@ def header():
 
 
 def footer():
-    h = 360
+    h = 400
     gif = base64.b64encode((ASSETS / "vwc.gif").read_bytes()).decode()
     gw, gh = 280, 210  # 800x600 scaled proportionally
     body = f"""<path d="M{RAIL + 40} 40H{W - RAIL - 40}" stroke="{RED}" stroke-width="2"/>
-{text(W / 2, 90, "END OF BRIEF", "stencil", 30, WHITE, ' text-anchor="middle" letter-spacing="4"')}
-<rect x="{(W - gw) / 2 - 10}" y="100" width="{gw + 20}" height="{gh + 20}" fill="{WHITE}" stroke="{RED}" stroke-width="2"/>
-<image x="{(W - gw) / 2}" y="110" width="{gw}" height="{gh}" href="data:image/gif;base64,{gif}"/>"""
+{text(W / 2, 84, "Impact Over Interference.", "type", 20, SILVER, ' text-anchor="middle"')}
+{text(W / 2, 130, "END OF BRIEF", "stencil", 30, WHITE, ' text-anchor="middle" letter-spacing="4"')}
+<rect x="{(W - gw) / 2 - 10}" y="146" width="{gw + 20}" height="{gh + 20}" fill="{WHITE}" stroke="{RED}" stroke-width="2"/>
+<image x="{(W - gw) / 2}" y="156" width="{gw}" height="{gh}" href="data:image/gif;base64,{gif}"/>"""
     return slice_svg(h, body, bottom=True)
 
 
@@ -357,26 +360,121 @@ def city(stats):
     return slice_svg(640, body, css)
 
 
+# Operations without a fetched repo: (title, brief, meta, url or None for no link)
+EXTRA_OPS = [
+    ("J0DI3", "VWC's AI career intelligence platform for veterans.", "CLOSED SOURCE", None),
+    ("OPEN SOURCE BOARD", "The Vets Who Code open source project board.", "CONTRIBUTIONS WELCOME",
+     "https://github.com/orgs/Vets-Who-Code/projects/82"),
+]
+
+REPORTS = [  # (title, source, url)
+    ("JUNIOR TO SENIOR", "GITHUB README", "https://github.com/readme/guides/engineering-career-success"),
+    ("TEACHING IN PUBLIC", "GITHUB README", "https://github.com/readme/guides/teaching-with-github"),
+    ("LEARN HOW TO LEARN", "STACK OVERFLOW BLOG",
+     "https://stackoverflow.blog/2020/01/11/hello-world-want-to-be-a-developer-learn-how-to-learn/"),
+    ("EMBRACE THE SUCK", "STACK OVERFLOW BLOG",
+     "https://stackoverflow.blog/2020/02/10/hello-world-curing-imposter-syndrome-by-embracing-the-suck/"),
+]
+
+STACK = [
+    ("LANGUAGES", "Python, TypeScript/JavaScript, SQL"),
+    ("AI/ML", "LangChain, LangGraph, LangSmith, RAG, agentic systems, MCP, Hugging Face, T5, "
+              "Transformers.js, PyTorch, DeepSpeed"),
+    ("BACKEND", "FastAPI, Node.js, Pydantic"),
+    ("FRONTEND", "React, Next.js, TypeScript, Tailwind CSS, Framer Motion"),
+    ("CLOUD", "AWS, Azure, GCP (Vertex AI, BigQuery), Firebase"),
+    ("INFRA", "Terraform, Docker, Kubernetes, GitHub Actions"),
+    ("DATA", "PostgreSQL, Redis, BigQuery, Delta Lake"),
+]
+
+COMMENDATIONS = [
+    "Google Developer Expert",
+    "GitHub Star (alum)",
+    "White House workforce development recognition",
+    "Microsoft Global Hackathon winner",
+    "Master.dev (Frontend Masters) instructor: Getting a Software Engineering Job",
+    "LinkedIn Learning instructor",
+    "Stack Overflow Blog contributor",
+]
+FEATURED = "Wired · Business Insider · HuffPost · Black Enterprise · GitHub ReadME · Stack Overflow"
+
+TITLE_LINE = "FOUNDER & LEAD ENGINEER, VETS WHO CODE | AIR FORCE VETERAN | GOOGLE DEVELOPER EXPERT"
+BIO = "I engineer the platforms, AI systems, and curriculum that turn veterans into software engineers."
+
+
+def situation():
+    body = f"""{caption(40, 20, "SITUATION")}
+{text(40, 112, TITLE_LINE, "stencil", fit("stencil", TITLE_LINE, 17, W - 80), WHITE)}
+{text(40, 140, BIO, "type", fit("type", BIO, 15, W - 80), SILVER)}"""
+    return slice_svg(160, body)
+
+
+def unit():
+    tiles = [("300+", "VETERANS TRAINED"), ("$20M+", "COLLECTIVE ALUMNI EARNINGS"), ("100%", "REMOTE AND FREE TO VETERANS")]
+    body = caption(40, 20, "UNIT: VETS WHO CODE", "EST. 2014 · VETERAN-LED 501(C)(3) SOFTWARE ENGINEERING ACCELERATOR")
+    for i, (value, label) in enumerate(tiles):
+        x = 40 + i * 260
+        body += f"""<rect x="{x}" y="100" width="240" height="80" fill="{WHITE}"/>
+<rect x="{x}" y="100" width="240" height="4" fill="{RED}"/>
+<rect x="{x + 180}" y="104" width="60" height="76" fill="url(#dots)"/>
+{text(x + 20, 146, value, "stencil", 30)}
+{text(x + 20, 168, label, "type", 12)}"""
+    ship = "TROOPS NOW SHIP CODE AT MICROSOFT, GOOGLE, AMAZON, AND HOME DEPOT"
+    body += text(40, 218, ship, "stencil", fit("stencil", ship, 16, W - 80), WHITE)
+    body += text(40, 246, "I lead the org and engineer the systems that run it.", "type", 15, SILVER)
+    return slice_svg(280, body)
+
+
+def tech_stack():
+    rows, y = "", 128
+    for label, value in STACK:
+        rows += text(64, y, label, "stencil", 13, RED, ' letter-spacing="1"')
+        for line in wrap("type", value, 14, W - 64 - 190 - 24, 3):
+            rows += text(190, y, line, "type", 14)
+            y += 22
+        y += 6
+    panel_h = y - 96 + 4
+    h = math.ceil((96 + panel_h + 24) / 40) * 40
+    body = f"""{caption(40, 20, "TECH STACK")}
+<rect x="40" y="96" width="{W - 80}" height="{panel_h}" fill="{WHITE}"/>
+<rect x="40" y="96" width="6" height="{panel_h}" fill="{RED}"/>
+<rect x="{W - 120}" y="96" width="80" height="{panel_h}" fill="url(#dots)"/>
+{rows}"""
+    return slice_svg(h, body)
+
+
+def commendations():
+    body = caption(40, 20, "COMMENDATIONS")
+    for i, item in enumerate(COMMENDATIONS):
+        y = 112 + i * 28
+        body += f'<path d="M48 {y - 5}l5-5 5 5-5 5z" fill="{RED}"/>'
+        body += text(68, y, item, "type", fit("type", item, 15, W - 108), WHITE)
+    body += text(40, 320, "FEATURED IN", "stencil", 13, RED, ' letter-spacing="1"')
+    body += text(150, 320, FEATURED, "type", fit("type", FEATURED, 14, W - 190), SILVER)
+    return slice_svg(360, body)
+
+
 def ops(stats):
-    """Repos shown as Operations cards (picked in fetch.OPS)."""
-    return stats["ops"]
+    """Operations cards: (title, brief, meta, url or None). Repos are picked in fetch.OPS."""
+    out = []
+    for r in stats["ops"]:
+        meta = f"{r['stars']:,} STARS · {r['forks']:,} FORKS"
+        if r["languages"]:
+            meta += " · " + " / ".join(r["languages"][:3]).upper()
+        out.append((r["name"].upper(), r["description"], meta, r["url"]))
+    return out + EXTRA_OPS
 
 
-def operations_caption():
-    return slice_svg(80, caption(40, 20, "OPERATIONS"))
+def half(side):
+    """(panel x, panel width) for a half-width card; panels mirror around the page center."""
+    return (34, 376) if side == "left" else (10, 376)
 
 
-def op_card(repo, side):
-    w, h = W // 2, 160
-    px, pw = (34, 376) if side == "left" else (10, 376)
-    name = repo["name"].upper()
-    title = f"OP: {name}"
+def op_card(title, desc, meta, side):
+    px, pw = half(side)
+    title = f"OP: {title}"
     size = fit("stencil", title, 18, pw - 40)
-    desc = has_glyphs("type", repo["description"]) or "No brief on file."
-    lines = wrap("type", desc, 12, pw - 40, 3)
-    meta = f"{repo['stars']:,} STARS · {repo['forks']:,} FORKS"
-    if repo["languages"]:
-        meta += " · " + " / ".join(repo["languages"][:3]).upper()
+    lines = wrap("type", has_glyphs("type", desc), 12, pw - 40, 3)
     meta_size = fit("type", meta, 11, pw - 40)
     body = f"""<rect x="{px}" y="16" width="{pw}" height="128" fill="{WHITE}"/>
 <rect x="{px}" y="16" width="{pw}" height="6" fill="{RED}"/>
@@ -385,17 +483,39 @@ def op_card(repo, side):
 {"".join(text(px + 20, 76 + i * 17, s, "type", 12) for i, s in enumerate(lines))}
 <path d="M{px + 20} 120H{px + pw - 20}" stroke="{NAVY}" stroke-opacity=".25"/>
 {text(px + 20, 136, meta, "type", meta_size, RED)}"""
-    return slice_svg(h, body, w=w, left=side == "left", right=side == "right")
+    return slice_svg(160, body, w=W // 2, left=side == "left", right=side == "right")
+
+
+def report_card(title, source, side):
+    px, pw = half(side)
+    body = f"""<rect x="{px}" y="12" width="{pw}" height="96" fill="{WHITE}"/>
+<rect x="{px}" y="12" width="6" height="96" fill="{RED}"/>
+<rect x="{px + pw - 60}" y="12" width="60" height="96" fill="url(#dots)"/>
+{text(px + 24, 52, title, "stencil", fit("stencil", title, 20, pw - 48), extra=' letter-spacing="1"')}
+{text(px + 24, 82, f"{source} · READ THE REPORT", "type", 12, RED)}"""
+    return slice_svg(120, body, w=W // 2, left=side == "left", right=side == "right")
 
 
 def render(stats):
     """{filename: svg} for every slice."""
-    out = {"header.svg": header(), "record.svg": record(stats), "operations.svg": operations_caption(),
-           "footer.svg": footer()}
+    out = {
+        "header.svg": header(),
+        "situation.svg": situation(),
+        "unit.svg": unit(),
+        "record.svg": record(stats),
+        "city.svg": city(stats),
+        "operations.svg": slice_svg(80, caption(40, 20, "OPERATIONS")),
+        "stack.svg": tech_stack(),
+        "commendations.svg": commendations(),
+        "reports.svg": slice_svg(80, caption(40, 20, "FIELD REPORTS")),
+        "footer.svg": footer(),
+    }
     out.update(links())
-    out["city.svg"] = city(stats)
-    for i, repo in enumerate(ops(stats)):
-        out[f"op-{i + 1}.svg"] = op_card(repo, "left" if i % 2 == 0 else "right")
+    sides = ("left", "right")
+    for i, (title, desc, meta, _) in enumerate(ops(stats)):
+        out[f"op-{i + 1}.svg"] = op_card(title, desc, meta, sides[i % 2])
+    for i, (title, source, _) in enumerate(REPORTS):
+        out[f"report-{i + 1}.svg"] = report_card(title, source, sides[i % 2])
     return out
 
 

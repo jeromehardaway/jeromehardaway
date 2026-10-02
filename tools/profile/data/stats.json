@@ -4687,7 +4687,7 @@
    "url": "https://github.com/Vets-Who-Code/vetswhocode-vs-code-theme"
   },
   {
-   "description": "List of fun apis that are free for troops to play with while learning javascript",
+   "description": "Free, fun APIs for troops to build with while learning JavaScript.",
    "forks": 46,
    "languages": [],
    "name": "api-list",
@@ -4695,7 +4695,7 @@
    "url": "https://github.com/Vets-Who-Code/api-list"
   },
   {
-   "description": "Prework for Prospective VWC Troops",
+   "description": "The on-ramp every prospective VWC troop completes.",
    "forks": 48,
    "languages": [],
    "name": "Prework",
@@ -4703,7 +4703,7 @@
    "url": "https://github.com/Vets-Who-Code/Prework"
   },
   {
-   "description": "a repository of skills and agents made at Vets Who COde that helps our nonprofit build and and operate straight from the terminal..",
+   "description": "The skill map behind the Hashflag Method curriculum.",
    "forks": 1,
    "languages": [],
    "name": "hashflag-skills",
@@ -4711,7 +4711,7 @@
    "url": "https://github.com/Vets-Who-Code/hashflag-skills"
   },
   {
-   "description": "Extension Pack For New veterans learning Javascript at Vets Who Code",
+   "description": "The VWC developer environment, out of the box.",
    "forks": 1,
    "languages": [],
    "name": "vetswhocode-extension-pack",

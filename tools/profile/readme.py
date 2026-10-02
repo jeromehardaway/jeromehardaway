@@ -1,32 +1,48 @@
 """Rewrite only the content between <!-- name:start --> / <!-- name:end --> markers in README.md."""
 
 import json
+from html import escape
 import sys
 
-from render import LINKS, ROOT, STATS, ops
+from render import BIO, COMMENDATIONS, FEATURED, LINKS, REPORTS, ROOT, STACK, STATS, TITLE_LINE, ops
 
 README = ROOT / "README.md"
 
 
 def img(name, alt):
-    return f'<img src="./assets/{name}.svg" alt="{alt}" align="top">'
+    return f'<img src="./assets/{name}.svg" alt="{escape(alt)}" align="top">'
+
+
+def pairs(items):
+    """Half-width pieces two per row. They must touch: whitespace between them shows as a gap."""
+    return ["".join(items[i:i + 2]) for i in range(0, len(items), 2)]
+
+
+def linked(url, image):
+    return f'<a href="{url}">{image}</a>' if url else image
 
 
 def brief(stats):
-    # Pieces that share a row must touch: no whitespace between them or GitHub shows a gap.
-    links = "".join(f'<a href="{url}">{img(name, label)}</a>' for name, label, url in LINKS)
-    cards = [f'<a href="{r["url"]}">{img(f"op-{i + 1}", "OP: " + r["name"])}</a>' for i, r in enumerate(ops(stats))]
-    rows = ["".join(cards[i:i + 2]) for i in range(0, len(cards), 2)]
+    links = "".join(linked(url, img(name, label)) for name, label, url in LINKS)
+    cards = [linked(url, img(f"op-{i + 1}", f"OP: {title}. {desc}")) for i, (title, desc, _, url) in enumerate(ops(stats))]
+    reports = [linked(url, img(f"report-{i + 1}", f"{title} ({source})")) for i, (title, source, url) in enumerate(REPORTS)]
     return "\n".join([
         '<div align="center">',
         img("header", "Mission Brief: Jerome Hardaway, @Maverick, USAF Veteran, Founder of Vets Who Code"),
         links,
+        img("situation", f"{TITLE_LINE}. {BIO}"),
+        img("unit", "Vets Who Code: est. 2014, 300+ veterans trained, $20M+ collective alumni earnings, "
+                    "100% remote and free to veterans"),
         img("record", f"Service record: {stats['followers']:,} followers, {stats['stars']:,} stars, "
                       f"{stats['prs_merged']:,} PRs merged, {stats['contributions_all_time']:,} contributions"),
         img("city", "Mission Log: contribution city for the last 53 weeks"),
         img("operations", "Operations"),
-        *rows,
-        img("footer", "End of brief"),
+        *pairs(cards),
+        img("stack", "Tech stack: " + "; ".join(f"{k}: {v}" for k, v in STACK)),
+        img("commendations", "Commendations: " + "; ".join(COMMENDATIONS) + ". Featured in: " + FEATURED),
+        img("reports", "Field reports"),
+        *pairs(reports),
+        img("footer", "Impact Over Interference. End of brief."),
         "</div>",
     ])
 
