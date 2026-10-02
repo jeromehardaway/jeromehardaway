@@ -1,0 +1,27 @@
+name: Hashflagify
+on:
+  schedule:
+    - cron: "17 12 * * *"   # UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r tools/profile/requirements.txt
+      - run: python tools/profile/fetch.py
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: python tools/profile/render.py
+      - run: python tools/profile/readme.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets tools/profile/data README.md
+          git diff --cached --quiet || (git commit -m "Hashflagify: refresh profile" && git push)
