@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="240" viewBox="0 0 260 240">
+<style>
+.rail{fill:none;stroke:#C5203E;stroke-width:3}
+.rail2{fill:none;stroke:#C5203E;stroke-width:1;opacity:.55}
+.stencil{font-family:stencil}.type{font-family:type}
+</style>
+<defs>
+<!-- grid lines sit inside pixel rows, never on a slice edge -->
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M0 20.5H40M20.5 0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".07"/>
+<path d="M0 0.5H40M0.5 0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".03"/>
+</pattern>
+<pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse">
+<circle cx="3" cy="3" r="1.1" fill="#091F40" opacity=".18"/>
+</pattern>
+</defs>
+<rect width="260" height="240" fill="#091F40"/>
+<rect width="260" height="240" fill="url(#grid)"/>
+<path d="M14 0V240" class="rail"/><path d="M21 0V240" class="rail2"/>
+<rect x="252" width="8" height="240" fill="#FFFFFF"/>
+</svg>

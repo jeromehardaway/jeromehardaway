@@ -17,5 +17,7 @@
 <a href="https://github.com/readme/guides/engineering-career-success"><img src="./assets/report-1.svg" alt="JUNIOR TO SENIOR (GITHUB README)" width="50%" align="top"></a><a href="https://github.com/readme/guides/teaching-with-github"><img src="./assets/report-2.svg" alt="TEACHING IN PUBLIC (GITHUB README)" width="50%" align="top"></a>
 <a href="https://stackoverflow.blog/2020/01/11/hello-world-want-to-be-a-developer-learn-how-to-learn/"><img src="./assets/report-3.svg" alt="LEARN HOW TO LEARN (STACK OVERFLOW BLOG)" width="50%" align="top"></a><a href="https://stackoverflow.blog/2020/02/10/hello-world-curing-imposter-syndrome-by-embracing-the-suck/"><img src="./assets/report-4.svg" alt="EMBRACE THE SUCK (STACK OVERFLOW BLOG)" width="50%" align="top"></a>
 <img src="./assets/footer.svg" alt="Impact Over Interference. End of brief." width="100%" align="top">
+<img src="./assets/footer-left.svg" alt="" width="30.95%" align="top"><img src="./assets/vwc.gif" alt="Vets Who Code" width="38.1%" align="top"><img src="./assets/footer-right.svg" alt="" width="30.95%" align="top">
+<img src="./assets/footer-end.svg" alt="" width="100%" align="top">
 </div>
 <!-- brief:end -->

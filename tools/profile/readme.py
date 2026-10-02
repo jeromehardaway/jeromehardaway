@@ -44,6 +44,10 @@ def brief(stats):
         img("reports", "Field reports"),
         *pairs(reports),
         img("footer", "Impact Over Interference. End of brief."),
+        # ponytail: 30.95 + 38.1 + 30.95 = 100; sides are 260/840, the 320px GIF row is 240 tall
+        img("footer-left", "", "30.95%") + '<img src="./assets/vwc.gif" alt="Vets Who Code" width="38.1%" align="top">'
+        + img("footer-right", "", "30.95%"),
+        img("footer-end", ""),
         "</div>",
     ])
 

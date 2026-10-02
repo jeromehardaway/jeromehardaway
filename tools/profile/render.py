@@ -206,15 +206,20 @@ def header():
 
 
 def footer():
-    h = 400
-    gif = base64.b64encode((ASSETS / "vwc.gif").read_bytes()).decode()
-    gw, gh = 280, 210  # 800x600 scaled proportionally
-    body = f"""<path d="M{RAIL + 40} 40H{W - RAIL - 40}" stroke="{RED}" stroke-width="2"/>
+    """The GIF is its own <img> (GIFs inside an SVG <img> don't reliably animate), so the
+    footer is four pieces: text, a navy slice either side of the 320x240 GIF, and the end."""
+    gw, side = 320, (W - 320) // 2
+    frame = f'fill="{WHITE}"'
+    top = f"""<path d="M{RAIL + 40} 40H{W - RAIL - 40}" stroke="{RED}" stroke-width="2"/>
 {text(W / 2, 84, "Impact Over Interference.", "type", 20, SILVER, ' text-anchor="middle"')}
 {text(W / 2, 130, "END OF BRIEF", "stencil", 30, WHITE, ' text-anchor="middle" letter-spacing="4"')}
-<rect x="{(W - gw) / 2 - 10}" y="146" width="{gw + 20}" height="{gh + 20}" fill="{WHITE}" stroke="{RED}" stroke-width="2"/>
-<image x="{(W - gw) / 2}" y="156" width="{gw}" height="{gh}" href="data:image/gif;base64,{gif}"/>"""
-    return slice_svg(h, body, bottom=True)
+<rect x="{side - 8}" y="152" width="{gw + 16}" height="8" {frame}/>"""
+    return {
+        "footer.svg": slice_svg(160, top),
+        "footer-left.svg": slice_svg(240, f'<rect x="{side - 8}" width="8" height="240" {frame}/>', w=side, right=False),
+        "footer-right.svg": slice_svg(240, f'<rect width="8" height="240" {frame}/>', w=side, left=False),
+        "footer-end.svg": slice_svg(40, f'<rect x="{side - 8}" width="{gw + 16}" height="8" {frame}/>', bottom=True),
+    }
 
 
 # ---------- link buttons: one SVG each so each can sit in its own <a> ----------
@@ -503,8 +508,8 @@ def render(stats):
         "stack.svg": tech_stack(),
         "commendations.svg": commendations(),
         "reports.svg": slice_svg(80, caption(40, 20, "FIELD REPORTS")),
-        "footer.svg": footer(),
     }
+    out.update(footer())
     out.update(links())
     sides = ("left", "right")
     for i, (title, desc, meta, _) in enumerate(ops(stats)):
