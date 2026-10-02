@@ -36,7 +36,6 @@ I lead the org and engineer the systems that run it.
 ### What I Engineer at VWC
 
 🌐 **[vets-who-code-app](https://github.com/Vets-Who-Code/vets-who-code-app)** — The TypeScript/Next.js platform behind [vetswhocode.io](https://vetswhocode.io) and the accelerator.  
-🪟 **[windows-dev-guide](https://github.com/Vets-Who-Code/windows-dev-guide)** — The complete Windows web developer setup guide.  
 🔌 **[api-list](https://github.com/Vets-Who-Code/api-list)** — Free, fun APIs for troops to build with while learning JavaScript.  
 🎖️ **[Prework](https://github.com/Vets-Who-Code/Prework)** — The on-ramp every prospective VWC troop completes.  
 📐 **[hashflag-skills](https://github.com/Vets-Who-Code/hashflag-skills)** — The skill map behind the Hashflag Method curriculum.  
