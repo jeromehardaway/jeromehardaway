@@ -1,17 +1,22 @@
-<h1 align="center">Jerome Hardaway</h1>
+<!-- brief:start -->
+<div align="center">
+<img src="./assets/header.svg" alt="Mission Brief: Jerome Hardaway, @Maverick, USAF Veteran, Founder of Vets Who Code" align="top">
+<a href="https://vetswhocode.io"><img src="./assets/link-vwc.svg" alt="VETSWHOCODE.IO" align="top"></a><a href="https://github.com/Vets-Who-Code"><img src="./assets/link-github.svg" alt="VWC GITHUB" align="top"></a><a href="https://www.linkedin.com/in/jeromehardaway"><img src="./assets/link-linkedin.svg" alt="LINKEDIN" align="top"></a><a href="https://www.youtube.com/@vetswhocode"><img src="./assets/link-youtube.svg" alt="YOUTUBE" align="top"></a><a href="https://jerome.codes"><img src="./assets/link-portfolio.svg" alt="PORTFOLIO" align="top"></a>
+<img src="./assets/record.svg" alt="Service record: 750 followers, 206 stars, 492 PRs merged, 5,150 contributions" align="top">
+<img src="./assets/city.svg" alt="Mission Log: contribution city for the last 53 weeks" align="top">
+<img src="./assets/operations.svg" alt="Operations" align="top">
+<a href="https://github.com/jeromehardaway/how-to-get-the-front-end-job-v2"><img src="./assets/op-1.svg" alt="OP: how-to-get-the-front-end-job-v2" align="top"></a><a href="https://github.com/jeromehardaway/how-to-get-front-end-job"><img src="./assets/op-2.svg" alt="OP: how-to-get-front-end-job" align="top"></a>
+<a href="https://github.com/jeromehardaway/react-user-search"><img src="./assets/op-3.svg" alt="OP: react-user-search" align="top"></a><a href="https://github.com/jeromehardaway/prompt-engineering-practice-chat-app"><img src="./assets/op-4.svg" alt="OP: prompt-engineering-practice-chat-app" align="top"></a>
+<a href="https://github.com/jeromehardaway/practice"><img src="./assets/op-5.svg" alt="OP: practice" align="top"></a><a href="https://github.com/jeromehardaway/eriks-travel-agency"><img src="./assets/op-6.svg" alt="OP: eriks-travel-agency" align="top"></a>
+<img src="./assets/footer.svg" alt="End of brief" align="top">
+</div>
+<!-- brief:end -->
 
 <p align="center">
   <b>Founder & Lead Engineer, Vets Who Code • Air Force Veteran • Google Developer Expert</b><br>
   I engineer the platforms, AI systems, and curriculum that turn veterans into software engineers.
 </p>
 
-<p align="center">
-  <a href="https://vetswhocode.io" target="_blank"><img src="https://img.shields.io/badge/Vets%20Who%20Code-%23C5203E.svg?style=for-the-badge"/></a>
-  <a href="https://github.com/Vets-Who-Code" target="_blank"><img src="https://img.shields.io/badge/VWC%20GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/jeromehardaway" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://www.youtube.com/@vetswhocode" target="_blank"><img src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  <a href="https://jerome.codes" target="_blank"><img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-</p>
 
 ---
 
@@ -58,14 +63,6 @@ Data:          PostgreSQL, Redis, BigQuery, Delta Lake
 ---
 
 ### Recognition
-
-<p>
-  <img src="https://img.shields.io/badge/Google-Developer%20Expert-4285F4?style=flat-square&logo=google&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-Star%20Alum-181717?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/badge/White%20House-Workforce%20Recognition-0052A5?style=flat-square" />
-  <img src="https://img.shields.io/badge/Microsoft-Global%20Hackathon%20Winner-5C2D91?style=flat-square" />
-  <img src="https://img.shields.io/badge/ForbesBLK-Member-black?style=flat-square" />
-</p>
 
 - **Google Developer Expert**
 - **GitHub Star** (alum)
