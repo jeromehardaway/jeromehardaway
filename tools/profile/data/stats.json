@@ -4687,12 +4687,15 @@
    "url": "https://github.com/Vets-Who-Code/vetswhocode-vs-code-theme"
   },
   {
-   "description": "Free, fun APIs for troops to build with while learning JavaScript.",
-   "forks": 46,
-   "languages": [],
-   "name": "api-list",
-   "stars": 206,
-   "url": "https://github.com/Vets-Who-Code/api-list"
+   "description": "The VWC field manual: four playbooks from the terminal to production AI.",
+   "forks": 0,
+   "languages": [
+    "HTML"
+   ],
+   "name": "vets-who-code.github.io",
+   "stars": 1,
+   "title": "HASHFLAG PLAYBOOKS",
+   "url": "https://vets-who-code.github.io/"
   },
   {
    "description": "The on-ramp every prospective VWC troop completes.",

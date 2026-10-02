@@ -21,11 +21,13 @@ TOKEN = os.environ.get("PROFILE_TOKEN") or os.environ.get("GITHUB_TOKEN")
 OPS = {
     "vets-who-code-app": "The TypeScript/Next.js platform behind vetswhocode.io and the accelerator.",
     "vetswhocode-vs-code-theme": "A VS Code theme in Vets Who Code colors.",
-    "api-list": "Free, fun APIs for troops to build with while learning JavaScript.",
+    "vets-who-code.github.io": "The VWC field manual: four playbooks from the terminal to production AI.",
     "Prework": "The on-ramp every prospective VWC troop completes.",
     "hashflag-skills": "The skill map behind the Hashflag Method curriculum.",
     "vetswhocode-extension-pack": "The VWC developer environment, out of the box.",
 }
+# Ops shown as their live site instead of the repo: name -> (card title, link)
+SITES = {"vets-who-code.github.io": ("HASHFLAG PLAYBOOKS", "https://vets-who-code.github.io/")}
 
 PROFILE_QUERY = """
 query($login: String!) {
@@ -93,6 +95,8 @@ def fetch_ops():
     ops = [repo(data[f"r{i}"]) for i in range(len(OPS))]
     for r, brief in zip(ops, OPS.values()):
         r["description"] = brief
+        if r["name"] in SITES:
+            r["title"], r["url"] = SITES[r["name"]]
     return ops
 
 

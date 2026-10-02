@@ -461,7 +461,7 @@ def ops(stats):
         meta = f"{r['stars']:,} STARS · {r['forks']:,} FORKS"
         if r["languages"]:
             meta += " · " + " / ".join(r["languages"][:3]).upper()
-        out.append((r["name"].upper(), r["description"], meta, r["url"]))
+        out.append((r.get("title") or r["name"].upper(), r["description"], meta, r["url"]))
     return out + EXTRA_OPS
 
 
