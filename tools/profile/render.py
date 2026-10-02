@@ -219,24 +219,19 @@ def footer():
 
 # ---------- link buttons: one SVG each so each can sit in its own <a> ----------
 
-def link_cells():
-    """Widths of the 5 link cells: 140px buttons, 18px gaps, outer cells carry the rails."""
-    bw, gap, edge = 140, 18, 34
-    outer = edge + bw + gap // 2
-    return bw, gap, edge, [outer] + [bw + gap] * 3 + [outer]
-
-
 def links():
-    bw, gap, edge, widths = link_cells()
-    assert sum(widths) == W
+    """5 equal 168px cells (each img is width=20%, so the row scales as one). Buttons are
+    128px with even 33px gaps across the page; each one still sits inside its own cell."""
+    cell, bw, gap, edge = W // len(LINKS), 128, 33, 34
     out = {}
-    for i, ((name, label, _), w) in enumerate(zip(LINKS, widths)):
-        x = edge if i == 0 else gap // 2
+    for i, (name, label, _) in enumerate(LINKS):
+        x = edge + i * (bw + gap) - i * cell  # page position -> cell position
+        assert 0 <= x and x + bw <= cell
         size = fit("stencil", label, 15, bw - 24)
         body = f"""<rect x="{x}" y="20" width="{bw}" height="40" rx="4" fill="{WHITE}"/>
 <rect x="{x}" y="20" width="6" height="40" rx="2" fill="{RED}"/>
 {text(x + bw / 2 + 3, 46, label, "stencil", size, extra=' text-anchor="middle" letter-spacing="1"')}"""
-        out[f"{name}.svg"] = slice_svg(80, body, w=w, left=i == 0, right=i == len(LINKS) - 1)
+        out[f"{name}.svg"] = slice_svg(80, body, w=cell, left=i == 0, right=i == len(LINKS) - 1)
     return out
 
 

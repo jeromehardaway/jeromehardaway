@@ -9,8 +9,9 @@ from render import BIO, COMMENDATIONS, FEATURED, LINKS, REPORTS, ROOT, STACK, ST
 README = ROOT / "README.md"
 
 
-def img(name, alt):
-    return f'<img src="./assets/{name}.svg" alt="{escape(alt)}" align="top">'
+def img(name, alt, width="100%"):
+    # Percent widths: every piece scales by the same factor when the column is narrower than 840px.
+    return f'<img src="./assets/{name}.svg" alt="{escape(alt)}" width="{width}" align="top">'
 
 
 def pairs(items):
@@ -23,9 +24,9 @@ def linked(url, image):
 
 
 def brief(stats):
-    links = "".join(linked(url, img(name, label)) for name, label, url in LINKS)
-    cards = [linked(url, img(f"op-{i + 1}", f"OP: {title}. {desc}")) for i, (title, desc, _, url) in enumerate(ops(stats))]
-    reports = [linked(url, img(f"report-{i + 1}", f"{title} ({source})")) for i, (title, source, url) in enumerate(REPORTS)]
+    links = "".join(linked(url, img(name, label, "20%")) for name, label, url in LINKS)
+    cards = [linked(url, img(f"op-{i + 1}", f"OP: {title}. {desc}", "50%")) for i, (title, desc, _, url) in enumerate(ops(stats))]
+    reports = [linked(url, img(f"report-{i + 1}", f"{title} ({source})", "50%")) for i, (title, source, url) in enumerate(REPORTS)]
     return "\n".join([
         '<div align="center">',
         img("header", "Mission Brief: Jerome Hardaway, @Maverick, USAF Veteran, Founder of Vets Who Code"),
