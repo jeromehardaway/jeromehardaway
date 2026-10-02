@@ -195,7 +195,7 @@ def header():
         tag += text(tx + 80, y, s, "stencil", sz)
         y += 40 if sz > 22 else 34
     cy = ty + th / 2
-    body = f"""<g>{"".join(chars)}<rect class="cursor" x="{xs[0]:.1f}" y="46" width="3" height="30"/></g>
+    body = f"""<g>{"".join(chars)}<rect class="cursor" x="{xs[0] + 5:.1f}" y="46" width="3" height="30"/></g>
 <path d="M{tx + 34} {cy - 12}C{tx - 40} {cy - 80} {tx - 60} 40 {tx - 120} 0" fill="none" stroke="{SILVER}" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8"/>
 <rect x="{tx - 6}" y="{ty - 6}" width="{tw + 12}" height="{th + 12}" rx="46" fill="{WHITE}" opacity=".12"/>
 <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="40" fill="{WHITE}" stroke="{SILVER}" stroke-width="2"/>
