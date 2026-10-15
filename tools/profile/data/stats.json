@@ -4659,7 +4659,7 @@
   "2026-10-01": 4,
   "2026-10-02": 12,
   "2026-10-03": 11,
-  "2026-10-04": 1,
+  "2026-10-04": 2,
   "2026-10-05": 0,
   "2026-10-06": 3,
   "2026-10-07": 1,
@@ -4669,10 +4669,11 @@
   "2026-10-11": 34,
   "2026-10-12": 0,
   "2026-10-13": 4,
-  "2026-10-14": 1
+  "2026-10-14": 57,
+  "2026-10-15": 0
  },
- "contributions_all_time": 5239,
- "contributions_this_year": 2645,
+ "contributions_all_time": 5296,
+ "contributions_this_year": 2702,
  "created_at": "2014-03-28T21:10:47Z",
  "followers": 751,
  "login": "jeromehardaway",
@@ -4711,7 +4712,7 @@
   },
   {
    "description": "The on-ramp every prospective VWC troop completes.",
-   "forks": 48,
+   "forks": 49,
    "languages": [],
    "name": "Prework",
    "stars": 150,
@@ -4720,7 +4721,10 @@
   {
    "description": "The skill map behind the Hashflag Method curriculum.",
    "forks": 1,
-   "languages": [],
+   "languages": [
+    "TypeScript",
+    "Python"
+   ],
    "name": "hashflag-skills",
    "stars": 0,
    "url": "https://github.com/Vets-Who-Code/hashflag-skills"
@@ -4734,8 +4738,8 @@
    "url": "https://github.com/Vets-Who-Code/vetswhocode-extension-pack"
   }
  ],
- "prs_merged": 518,
- "prs_total": 589,
+ "prs_merged": 523,
+ "prs_total": 612,
  "repos": [
   {
    "description": "Updating my FEM Course",
