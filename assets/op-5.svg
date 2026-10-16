@@ -23,5 +23,5 @@
 <text x="54.0" y="52.0" class="stencil" font-size="18.0" fill="#091F40">OP: HASHFLAG-SKILLS</text>
 <text x="54.0" y="76.0" class="type" font-size="12.0" fill="#091F40">The skill map behind the Hashflag Method curriculum.</text>
 <path d="M54 120H390" stroke="#091F40" stroke-opacity=".25"/>
-<text x="54.0" y="136.0" class="type" font-size="11.0" fill="#C5203E">0 STARS · 1 FORKS · TYPESCRIPT / PYTHON</text>
+<text x="54.0" y="136.0" class="type" font-size="11.0" fill="#C5203E">0 STARS · 1 FORKS · PYTHON / TYPESCRIPT</text>
 </svg>
