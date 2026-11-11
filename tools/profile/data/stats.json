@@ -4696,12 +4696,13 @@
   "2026-11-07": 1,
   "2026-11-08": 1,
   "2026-11-09": 8,
-  "2026-11-10": 0
+  "2026-11-10": 4,
+  "2026-11-11": 7
  },
- "contributions_all_time": 5396,
- "contributions_this_year": 2802,
+ "contributions_all_time": 5407,
+ "contributions_this_year": 2813,
  "created_at": "2014-03-28T21:10:47Z",
- "followers": 757,
+ "followers": 764,
  "login": "jeromehardaway",
  "name": "Jerome Hardaway",
  "ops": [
@@ -4765,8 +4766,8 @@
    "url": "https://github.com/Vets-Who-Code/vetswhocode-extension-pack"
   }
  ],
- "prs_merged": 541,
- "prs_total": 622,
+ "prs_merged": 542,
+ "prs_total": 623,
  "repos": [
   {
    "description": "Updating my FEM Course",
@@ -4783,7 +4784,7 @@
     "Python"
    ],
    "name": "jeromehardaway",
-   "stars": 12,
+   "stars": 13,
    "url": "https://github.com/jeromehardaway/jeromehardaway"
   },
   {
@@ -4919,9 +4920,10 @@
    "description": "Jerome Personal Website",
    "forks": 0,
    "languages": [
-    "JavaScript",
+    "HTML",
     "CSS",
-    "HTML"
+    "Python",
+    "JavaScript"
    ],
    "name": "jeromehardaway.github.io",
    "stars": 1,
@@ -5586,8 +5588,8 @@
    "url": "https://github.com/jeromehardaway/macro_bakery"
   }
  ],
- "stars": 207,
- "streak_current": 3,
+ "stars": 208,
+ "streak_current": 5,
  "streak_longest": 18,
  "years": [
   2014,
